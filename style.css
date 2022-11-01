@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.prog{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#progress{
+    background-color: rgb(149, 152, 154);
+    width:70%;
+    
+}
+
+.bar{
+    display: flex;
+}

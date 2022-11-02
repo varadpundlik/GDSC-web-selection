@@ -1,48 +1,95 @@
-.header{
+body {
+    font-family: sans-serif;
+}
+
+
+
+.header {
     display: flex;
     justify-content: space-between;
     margin: 20px;
 }
 
-.prog{
+.prog {
     display: flex;
     justify-content: space-between;
     margin: 10px;
 }
-
-#logo{
+#problem{
+    display:flex;
+    justify-content: space-between;
+}
+#logo {
     background-color: rgb(149, 152, 154);
     padding: 10px;
 }
-#progress{
-    width:60%;
+
+#progress {
+    width: 60%;
     margin-right: 10%;
     margin-left: 10%;
 }
 
-.bar{
-    background-color: rgb(149, 152, 154);
+.bar {
+    background-color: rgb(189, 218, 236);
     display: flex;
 }
 
 .checked {
     color: orange;
 }
-#content{
+
+#content {
     display: flex;
     margin-top: 2%;
 }
-#main{
-    width: 60%;
+
+#main {
+    width: 80%;
     margin-left: 10%;
 }
-#side{
+
+#main-topic {
+    width: 80%;
+    margin-left: 5%;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+}
+
+li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;
+}
+
+li li {
+    margin: 0;
+}
+
+li li:before {
+    content: counters(item, ".") " ";
+}
+
+#side {
     background-color: rgb(186, 244, 224);
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
+    height: 40%;
 }
-#choose{
+
+#choose {
     background-color: rgba(255, 253, 127, 0.912);
     border-radius: 20px;
     margin-left: 5%;
@@ -51,7 +98,19 @@
     margin-bottom: 2%;
     padding: 10px;
 }
-footer{
+.workspace{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+.problem{
+    width: 45%;
+}
+.ide {
+    width: 45%;
+}
+
+footer {
     margin-top: 10px;
     margin-left: 5%;
     margin-right: 5%;
